@@ -20,7 +20,7 @@ def deep_frier(putin, config = None, putout_scheme = ['file', 'deep fried img', 
         if config is None:
             proc_img_obj = RGB_deep_fry(img_obj)
         else:
-            proc_img_obj = RGB_deep_fry(img_obj, config[0], congig[1], config[2], config[3])
+            proc_img_obj = RGB_deep_fry(img_obj, config[0], config[1], config[2], config[3])
 
         if putout_scheme[0] == 'file' :
             file_maker(proc_img_obj, putout_scheme[1], putout_scheme[2])
